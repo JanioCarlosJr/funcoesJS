@@ -146,19 +146,11 @@ console.log(`O valor do produto é de ${valorOriginal}, e com o desconto, fica e
 
 // 3.2
 const validarTamanhoSenha = function (senha) {
-   if (senha.length > 8) {
-      return true
-   } else {
-      return false
-   }
-}
+  return senha.length > 8     }
 
 let senha = "senhaSegura2026"
 
 console.log(`Validador de Senha: ${validarTamanhoSenha(senha)}.`)
-
-
-
 
 
 /* ==========================================================================
