@@ -28,7 +28,7 @@
 // Escreva o código do Bloco 1 abaixo:
 
 // 1.1
-function calcularAreaTerreno(largura, comprimento){
+function calcularAreaTerreno(largura, comprimento) {
    const area = largura * comprimento;
    return area;
 }
@@ -37,7 +37,7 @@ let areaTerreno = calcularAreaTerreno(10, 25);
 console.log(`A area total é de ${areaTerreno} metros.`);
 
 // 1.2
-function ehNumeroPar(numero){
+function ehNumeroPar(numero) {
    const divisaoNumero = numero % 2 === 0 ? "PAR" : "IMPAR";
    return divisaoNumero;
 }
@@ -104,7 +104,7 @@ const moedaFormatada = formatarMoeda(valorInformado, moeda)
 // 2.3
 function calcularMediaTrimestre(nota1, nota2, nota3 = 0) {
    const mediaTotal = (nota1 + nota2 + nota3) / 3;
-   return mediaTotal 
+   return mediaTotal
 }
 
 let nota1 = 55
@@ -133,6 +133,29 @@ console.log(`A media das notas é de ${mediaTrimestral.toFixed(2)}.`)
    ========================================================================== */
 
 // Escreva o código do Bloco 3 abaixo:
+
+// 3.1
+const aplicarDesconto = function (valor, desconto) {
+   return valor - (valor * desconto)
+}
+
+let valorOriginal = 200;
+let porcentagemDesconto = 0.15;
+
+console.log(`O valor do produto é de ${valorOriginal}, e com o desconto, fica em ${aplicarDesconto(valorOriginal, porcentagemDesconto)}`);
+
+// 3.2
+const validarTamanhoSenha = function (senha) {
+   if (senha.length > 8) {
+      return true
+   } else {
+      return false
+   }
+}
+
+let senha = "senhaSegura2026"
+
+console.log(`Validador de Senha: ${validarTamanhoSenha(senha)}.`)
 
 
 
