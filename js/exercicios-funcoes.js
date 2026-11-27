@@ -80,7 +80,39 @@ console.log(mensagem);
 
 // Escreva o código do Bloco 2 abaixo:
 
+// 2.1
+function calcularTotalComFrete(precoProduto, frete = 15.00) {
+   const precoTotal = precoProduto + frete;
+   return precoTotal
+}
 
+let valorProduto = 150;
+let valorFrete = 25;
+let valorTotal = calcularTotalComFrete(valorProduto, valorFrete)
+
+console.log(`O Valor total é de ${valorTotal}.`)
+
+// 2.2
+function formatarMoeda(valor, simboloMoeda = "R$") {
+   console.log(`Valor Formatado é de ${simboloMoeda} ${valor}.`)
+}
+
+let valorInformado = 150;
+let moeda = "USD";
+const moedaFormatada = formatarMoeda(valorInformado, moeda)
+
+// 2.3
+function calcularMediaTrimestre(nota1, nota2, nota3 = 0) {
+   const mediaTotal = (nota1 + nota2 + nota3) / 3;
+   return mediaTotal 
+}
+
+let nota1 = 55
+let nota2 = 75
+let nota3 = 63
+
+const mediaTrimestral = calcularMediaTrimestre(nota1, nota2, nota3)
+console.log(`A media das notas é de ${mediaTrimestral.toFixed(2)}.`)
 
 
 
